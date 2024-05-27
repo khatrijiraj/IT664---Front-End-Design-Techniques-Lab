@@ -1,0 +1,12 @@
+1. What is frontend? Write a note on html, css and javascript
+2. Using HTML Tags, design your own curriculum vitae 
+3. Using HTML Tags, redesign the home page of GGSIP university
+4. Write a XML Program to display Student profile having age like student roll no., name age, semester, email id, phone number, department name, apply and validate using DTD
+5. Write a javascript Program to check wheter an input number is palindrome number or not
+6. Write a JSP Program to auto refresh a page.
+7. Write a JSP Program to upload file into server.
+8. Write a Generic Servlet program to display your own Enrollment number and Name using Apache Tomcat server.
+9. Write a HTTP Servlet program to display all the HTTP Request Header parameters. 
+10. Write a HTTP Servlet program to create a Cookie.
+11. Write a JDBC Program to fetch the employees records from the Employee table designed in MS Access. The Table should have fields like : Employee ID, Name, DOB, Address, Department, DOJ, Position etc.
+12. Create your portfolio website using LocalWP and Wordpress

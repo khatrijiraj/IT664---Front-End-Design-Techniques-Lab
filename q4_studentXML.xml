@@ -1,0 +1,23 @@
+<!-- student_profile.xml -->
+<!DOCTYPE student [
+    <!ELEMENT student (roll, name, age, semester, email, phone, department, apply)>
+    <!ELEMENT roll (#PCDATA)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT age (#PCDATA)>
+    <!ELEMENT semester (#PCDATA)>
+    <!ELEMENT email (#PCDATA)>
+    <!ELEMENT phone (#PCDATA)>
+    <!ELEMENT department (#PCDATA)>
+    <!ELEMENT apply (#PCDATA)>
+]>
+
+<student>
+    <roll>1</roll>
+    <name>John Doe</name>
+    <age>20</age>
+    <semester>3</semester>
+    <email>john.doe@example.com</email>
+    <phone>1234567890</phone>
+    <department>Computer Science</department>
+    <apply>Yes</apply>
+</student>

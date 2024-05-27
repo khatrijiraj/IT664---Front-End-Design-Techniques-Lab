@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Palindrome Checker</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+      input[type="text"],
+      input[type="submit"] {
+        margin: 10px;
+        padding: 5px;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Palindrome Checker</h1>
+    <form id="palindromeForm">
+      <label for="number">Enter a number:</label>
+      <input type="text" id="number" name="number" />
+      <input type="submit" value="Check" />
+    </form>
+    <div id="result"></div>
+
+    <script>
+      function isPalindrome(number) {
+        const strNumber = String(number);
+        const reversedNumber = strNumber.split("").reverse().join("");
+        return strNumber === reversedNumber;
+      }
+
+      document
+        .getElementById("palindromeForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          const number = document.getElementById("number").value;
+          if (!isNaN(number) && number !== "") {
+            if (isPalindrome(number)) {
+              document.getElementById(
+                "result"
+              ).innerText = `${number} is a palindrome number.`;
+            } else {
+              document.getElementById(
+                "result"
+              ).innerText = `${number} is not a palindrome number.`;
+            }
+          } else {
+            document.getElementById("result").innerText =
+              "Please enter a valid number.";
+          }
+        });
+    </script>
+  </body>
+</html>
